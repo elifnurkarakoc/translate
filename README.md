@@ -1,9 +1,9 @@
 <p align="center">
     <h3 align="center">Translate App</h3>
         <p align="center">
-            <a href="">View Demo on Vercel</a>
+            <a href="https://translateapp.vercel.app/">View Demo on Vercel</a>
              • 
-            <a href="">Backend Repo</a>
+            <a href="https://github.com/elifnurkarakoc/translate-gradio">Backend Repo</a>
         </p>
 </p>
 
