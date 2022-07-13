@@ -17,7 +17,7 @@
 - [Redux-thunk](https://github.com/reduxjs/redux-thunk)
 - [SASS](https://sass-lang.com/)
 
-### Backend
+### Backend API
 
 - [Gradio](https://gradio.app/)
 
