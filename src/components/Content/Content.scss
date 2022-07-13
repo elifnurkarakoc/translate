@@ -1,0 +1,13 @@
+.contentHolder {
+  display: flex;
+  flex-flow: row nowrap;
+
+  .translator {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 2px rgb(0 0 0 / 22%);
+    border-radius: 4px;
+  }
+}

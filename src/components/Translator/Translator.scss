@@ -1,0 +1,40 @@
+.translatorHolder {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  .languagesNavbar {
+    display: flex;
+    margin: 10px 0;
+    cursor: pointer;
+    .language {
+      margin-right: 10px;
+
+      &.active {
+        color: #0b71dd;
+      }
+    }
+  }
+
+  .inputHolder {
+    textarea {
+      width: 100%;
+      height: 100%;
+      white-space: pre-wrap;
+      overflow-wrap: break-word;
+      word-break: break-word;
+      word-wrap: break-word;
+      padding: 12px 20px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      background-color: #f8f8f8;
+      font-size: 16px;
+      resize: none;
+      &:focus {
+        outline: none !important;
+        border-color: #818d9b;
+        box-shadow: 0 0 10px #b1c2d4;
+      }
+    }
+  }
+}
