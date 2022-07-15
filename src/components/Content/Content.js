@@ -1,5 +1,5 @@
 /** Dependencies */
-import React, { useCallback, useState } from "react";
+import React, { lazy, useCallback, useState } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
@@ -7,9 +7,6 @@ import { createStructuredSelector } from "reselect";
 /** Store */
 import { getResult } from "store/api";
 import { translateLoadingSelector, translateSelector } from "store/selectors";
-
-/** Components */
-import Translator from "components/Translator/Translator";
 
 /** Utils */
 import { debounce } from "utils/helper";
@@ -20,11 +17,13 @@ import { languages } from "constants/constants";
 /** Stylesheets */
 import "./Content.scss";
 
+/** Components */
+const Translator = lazy(() => import("components/Translator/Translator"));
+
 const Content = ({ getResult, isLoading, translate }) => {
   const [selectedKey, setSelectedKey] = useState("tr");
   const [translatedKey, setTranslatedKey] = useState("en");
   const [value, setValue] = useState("");
-
   const [isFill, setIsFill] = useState(false);
 
   const onClick = (key) => {

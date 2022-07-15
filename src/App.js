@@ -1,15 +1,16 @@
 /** Dependencies */
 import { Provider } from "react-redux";
+import { lazy } from "react";
 
 /** Stores */
 import store from "store/store";
 
-/** Components */
-import { Header } from "components";
-
 /** Stylesheets */
 import "./App.scss";
-import Content from "components/Content/Content";
+
+/** Components */
+const Content = lazy(() => import("components/Content/Content"));
+const Header = lazy(() => import("components/Header/Header"));
 
 function App() {
   return (
